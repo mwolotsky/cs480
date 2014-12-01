@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="PTWinMobileApp.PTForm3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PTWinMobileApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock Text="PT Number" Margin="10,30,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_ptnumber" Margin="138,30,0,0" />
+        <TextBlock Text="Date" Margin="10,70,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dp_date_of_appointment" Margin="138,50,10,539" />
+        <TextBlock Text="Version" Margin="10,110,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Text="ChiefCOmplaint/ailment/injury" Margin="10,150,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Text="Date of injury" Margin="10,280,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Text="Date of surgery" Margin="10,320,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Text="How was did you sustain this injury" Margin="10,350,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    
+    </Grid>
+</Page>
