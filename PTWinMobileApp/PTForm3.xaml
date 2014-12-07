@@ -10,14 +10,27 @@
 
     <Grid>
         <TextBlock Text="PT Number" Margin="10,30,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox x:Name="tb_ptnumber" Margin="138,30,0,0" />
+        <TextBox x:Name="tb_ptnumber" Margin="128,10,10,0" >
+            <TextBox.InputScope>
+                <InputScope>
+                    <InputScope.Names>
+                        <InputScopeName NameValue="Number"/>
+                    </InputScope.Names>
+                </InputScope>
+            </TextBox.InputScope>
+        </TextBox>
         <TextBlock Text="Date" Margin="10,70,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <DatePicker x:Name="dp_date_of_appointment" Margin="138,50,10,539" />
         <TextBlock Text="Version" Margin="10,110,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock Text="ChiefCOmplaint/ailment/injury" Margin="10,150,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock Text="Date of injury" Margin="10,280,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock Text="Date of surgery" Margin="10,320,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock Text="How was did you sustain this injury" Margin="10,350,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Text="ChiefComplaint/ailment/injury" Margin="10,150,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_complaint" Margin="10,173,10,0" Height="102" TextWrapping="Wrap"/>
+        <TextBlock Text="Date of injury" Margin="10,307,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dp_date_of_injury" Margin="128,287,10,304" />
+        <TextBlock Text="Date of surgery" Margin="10,386,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dp_date_of_surgery" Margin="128,370,0,216" />
+        <TextBlock Text="How did you sustain this injury" Margin="10,442,0,0" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_sustain_injury" Margin="10,465,0,0" Height="100" TextWrapping="Wrap"/>
+        <Button x:Name="bt_nextstep" Margin="281,582,0,1" Content="Next Step" Click="NextStepClicked" />
     
     </Grid>
 </Page>

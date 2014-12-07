@@ -104,6 +104,21 @@
     <Compile Include="PTForm3.xaml.cs">
       <DependentUpon>PTForm3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PTForm4.xaml.cs">
+      <DependentUpon>PTForm4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PTForm5.xaml.cs">
+      <DependentUpon>PTForm5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PTForm6.xaml.cs">
+      <DependentUpon>PTForm6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PTForm7.xaml.cs">
+      <DependentUpon>PTForm7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PTForm8.xaml.cs">
+      <DependentUpon>PTForm8.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
@@ -143,6 +158,26 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="PTForm3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PTForm4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PTForm5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PTForm6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PTForm7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PTForm8.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -28,7 +28,19 @@ namespace PTWinMobileApp
             this.NavigationCacheMode = NavigationCacheMode.Required;
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
+            TextBox height = (TextBox)FindName("tb_height_ft");
+            height.Text = "Hello";
+            TextBox name = (TextBox)FindName("tb_lname");
+            if (!height.Text.Equals("Hello"))
+            {
+                name.Text = height.Text;
+            }
+        }
 
+        public void NextStepForm2Clicked(object sender, RoutedEventArgs e)
+        {
+            //TextBox fName, lName, 
+            this.Frame.Navigate(typeof(PTForm2));
         }
 
         public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
@@ -45,10 +57,7 @@ namespace PTWinMobileApp
             }
         }
 
-        public void NextStepForm2Clicked(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(PTForm2));
-        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }

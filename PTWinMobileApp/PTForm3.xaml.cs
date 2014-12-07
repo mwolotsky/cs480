@@ -25,8 +25,23 @@ namespace PTWinMobileApp
         public PTForm3()
         {
             this.InitializeComponent();
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+
         }
 
+        public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+            {
+                // Clear the status block when navigating 
+                //NotifyUser(String.Empty, NotifyType.StatusMessage);
+
+                this.Frame.GoBack();
+
+                //Indicate the back button press is handled so the app does not exit 
+                e.Handled = true;
+            }
+        }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>
@@ -34,6 +49,11 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        public void NextStepClicked(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PTForm4));
         }
     }
 }
