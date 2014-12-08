@@ -1,1 +1,1 @@
-C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\PTWinMobileApp.csproj;neutral
+C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\PTWinMobileApp.csproj;neutral

@@ -26,11 +26,14 @@ namespace PTWinMobileApp
         private string occupation;
         private int patientnumber;
         private int age;
-        private string birthdate;
-        private string height;
-        private double weight;
-        private double phone;
+        private DateTime birthdate;
+        private int heightFeet;
+        private int heightInches;
+        private int weightPounds;
+        private int weightOunces;
+        private string phone;
         private string employer;
+        private ArrayList<> 
 
         public PTPatient()
         {
@@ -38,10 +41,12 @@ namespace PTWinMobileApp
             lname = "";
             occupation = "";
             patientnumber = 0;
-            birthdate = "";
-            height = "";
-            weight = 0;
-            phone = 0;
+            birthdate = new DateTime();
+            heightFeet = 0;
+            heightInches = 0;
+            weightPounds = 0;
+            weightOunces = 0;
+            phone = "0";
             employer = "";
 
         }
@@ -53,13 +58,14 @@ namespace PTWinMobileApp
             {
                 fname = patientObject.GetNamedString(fnamekey, "");
                 lname = patientObject.GetNamedString(lnamekey, "");
-                patientnumber = patientObject.GetNamedValue(numberkey, 0);
+                patientnumber = Convert.ToInt32(patientObject.GetNamedNumber(numberkey, 0));
                 occupation = patientObject.GetNamedString(occupationkey, "");
-                age = patientObject.GetNamedNumber(agekey, 0);
-                birthdate = patientObject.GetNamedString(datekey, "");
-                height = patientObject.GetNamedString(heightkey, "");
-                weight = patientObject.GetNamedNumber(weightkey, 0);
-                phone = patientObject.GetNamedNumber(phonekey, 0);
+                age = Convert.ToInt32(patientObject.GetNamedNumber(agekey, 0));
+                //birthdate = patientObject.GetNamedString(datekey, "");
+                heightFeet = Convert.ToInt32(patientObject.GetNamedNumber(heightkey, 0));
+                //heightInches = Convert.ToInt32(patientObject.GetNamedNumber())
+                weightPounds = Convert.ToInt32(patientObject.GetNamedNumber(weightkey, 0));
+               // phone = patientObject.GetNamedNumber(phonekey, 0);
                 employer = patientObject.GetNamedString(employerkey, "");
             }
 
@@ -73,9 +79,9 @@ namespace PTWinMobileApp
             patientObject.SetNamedValue(numberkey, JsonValue.CreateNumberValue(patientnumber));
             patientObject.SetNamedValue(occupationkey, JsonValue.CreateStringValue(occupation));
             patientObject.SetNamedValue(agekey, JsonValue.CreateNumberValue(age));
-            patientObject.SetNamedValue(datekey, JsonValue.CreateStringValue(birthdate));
-            patientObject.SetNamedValue(heightkey, JsonValue.CreateStringValue(height));
-            patientObject.SetNamedValue(weightkey, JsonValue.CreateNumberValue(weight));
+           // patientObject.SetNamedValue(datekey, JsonValue.CreateStringValue(birthdate));
+           // patientObject.SetNamedValue(heightkey, JsonValue.CreateStringValue(height));
+           // patientObject.SetNamedValue(weightkey, JsonValue.CreateNumberValue(weight));
             patientObject.SetNamedValue(phonekey, JsonValue.CreateStringValue(phone));
             patientObject.SetNamedValue(employerkey, JsonValue.CreateStringValue(employer));
             return patientObject;
@@ -111,7 +117,7 @@ namespace PTWinMobileApp
                 lname = value;
             }
         }
-        public double Patientnumber
+        public int Patientnumber
         {
             get
             {
@@ -142,7 +148,8 @@ namespace PTWinMobileApp
             }
         }
 
-        public string Birthdate {
+        public DateTime Birthdate
+        {
             get
             {
                 return birthdate;
@@ -156,7 +163,7 @@ namespace PTWinMobileApp
                 birthdate = value;
             }
         }
-        public double Age
+        public int Age
         {
             get
             {
@@ -172,11 +179,11 @@ namespace PTWinMobileApp
             }
         }
 
-        public string Height
+        public int HeightFeet
         {
             get
             {
-                return height;
+                return heightFeet;
             }
             set
             {
@@ -184,14 +191,27 @@ namespace PTWinMobileApp
                 {
                     throw new ArgumentNullException("value");
                 }
-                height = value;
+                heightFeet = value;
             }
         }
-        public double Weight
+
+        public int HeightInches
         {
             get
             {
-                return weight;
+                return HeightInches;
+            }
+
+            set
+            {
+                heightInches = value;
+            }
+        }
+        public int WeightPounds
+        {
+            get
+            {
+                return weightPounds;
             }
             set
             {
@@ -199,7 +219,18 @@ namespace PTWinMobileApp
                 {
                     throw new ArgumentNullException("value");
                 }
-                weight = value;
+                weightPounds = value;
+            }
+        }
+        public int WeightOunces
+        {
+            get
+            {
+                return weightOunces;
+            }
+            set
+            {
+                weightOunces = value;
             }
         }
         public string Phone

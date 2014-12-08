@@ -22,6 +22,7 @@ namespace PTWinMobileApp
     /// </summary>
     public sealed partial class PTForm2 : Page
     {
+        PTPatient patient;
         public PTForm2()
         {
             this.InitializeComponent();
@@ -31,15 +32,27 @@ namespace PTWinMobileApp
 
         public void NextStepClicked(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PTForm3));
+            CheckBox employed = (CheckBox)FindName("cb_employed_yes");
+            if (employed.IsChecked == true)
+            {
+                TextBox employer = (TextBox)FindName("tb_employer");
+                TextBox occupation = (TextBox)FindName("tb_occupation");
+                patient.Employer = employer.Text;
+                patient.Occupation = occupation.Text;
+            }
+            else
+            {
+                patient.Employer = "N/A";
+                patient.Occupation = "N/A";
+            }
+
+            this.Frame.Navigate(typeof(PTForm3),patient);
         }
 
         public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
         {
             if (this.Frame.CanGoBack)
             {
-                // Clear the status block when navigating 
-                //NotifyUser(String.Empty, NotifyType.StatusMessage);
 
                 this.Frame.GoBack();
 
@@ -55,7 +68,7 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
+            patient = e.Parameter as PTPatient;
         }
     }
 }

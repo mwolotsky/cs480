@@ -47,9 +47,16 @@ namespace PTWinMobileApp
             if (patient == null)
             {
                 patient = new PTPatient();
-                patient.
+                patient.Fname = fName.Text;
+                patient.Lname = lName.Text;
+                patient.Patientnumber = Convert.ToInt32(pNumber.Text);
+                patient.Birthdate = bDay.Date.DateTime;
+                patient.HeightFeet = Convert.ToInt32(hFeet.Text);
+                patient.HeightInches = Convert.ToInt32(hIn.Text);
+                patient.WeightPounds = Convert.ToInt32(wLb.Text);
+                patient.Phone = phoneNum.Text;
             }
-            this.Frame.Navigate(typeof(PTForm2));
+            this.Frame.Navigate(typeof(PTForm2), patient);
         }
 
         public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)

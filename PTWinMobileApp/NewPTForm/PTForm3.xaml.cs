@@ -22,6 +22,7 @@ namespace PTWinMobileApp
     /// </summary>
     public sealed partial class PTForm3 : Page
     {
+        PTPatient patient;
         public PTForm3()
         {
             this.InitializeComponent();
@@ -49,10 +50,12 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            patient = e.Parameter as PTPatient;
         }
 
         public void NextStepClicked(object sender, RoutedEventArgs e)
         {
+
             this.Frame.Navigate(typeof(PTForm4));
         }
     }
