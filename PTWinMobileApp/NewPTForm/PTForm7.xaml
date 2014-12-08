@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="PTWinMobileApp.PTForm7"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PTWinMobileApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock FontSize="20" Margin="10,102,112,504" >
+        	<Run Text="Previous Medical Intervention: "/>
+        </TextBlock>
+        <CheckBox x:Name="cb_x_ray" Content="X-Ray" Margin="10,158,0,0" Height="64" />
+        <CheckBox x:Name="cb_mri" Content="MRI" Margin="10,203,0,0" />
+        <CheckBox x:Name="cb_other" Content="Other" Margin="10,248,0,0" />
+        <CheckBox x:Name="cb_standing" Content="Standing" Margin="222,248,0,0" />
+        <CheckBox x:Name="cb_injection" Content="Injections" Margin="222,203,0,0" />
+        <CheckBox x:Name="cb_cat_scan" Content="CAT Scan" Margin="222,158,0,0" />
+        <Button x:Name="bt_nextstep" Content="Next Step" Click="NextStepClicked" Margin="281,563,0,20" />
+
+    </Grid>
+</Page>
