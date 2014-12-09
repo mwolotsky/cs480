@@ -23,6 +23,7 @@ namespace PTWinMobileApp
     public sealed partial class PTForm3 : Page
     {
         PTPatient patient;
+        Form ptForm;
         public PTForm3()
         {
             this.InitializeComponent();
@@ -55,6 +56,7 @@ namespace PTWinMobileApp
 
         public void NextStepClicked(object sender, RoutedEventArgs e)
         {
+            ptForm = new Form();
 
             this.Frame.Navigate(typeof(PTForm4));
         }

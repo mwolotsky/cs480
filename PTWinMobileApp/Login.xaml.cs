@@ -25,7 +25,8 @@ namespace PTWinMobileApp
         public Login()
         {
             this.InitializeComponent();
-
+            PTUser pt = new PTUser(101010, "pt_user11", "password123", new DateTime(), PTUser.PT);
+            PTUser manager = new PTUser(100100, "manager_uswer1", "pass123", new DateTime(), PTUser.MANAGER);
             this.NavigationCacheMode = NavigationCacheMode.Required;
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 

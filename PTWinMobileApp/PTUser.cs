@@ -14,19 +14,34 @@ namespace PTWinMobileApp
         private const string datekey = "Date";
         private const string versionkey = "VersionNumber";
         private const string questionkey = "QuestionArray";
+        public static const int PT = 100;
+        public static const int MANAGER = 300;
 
-        private string userID;
-        private string date;
-        private string version;
-        //questions
+        private int userID;
+        private string userName;
+        private string password;
+        private int type;
+        private DateTime dateCreated;
 
 
         public PTUser()
         {
-            userID = "";
-            date = "";
-            version = "";
+            userID = -1;
+            userName = "";
+            password = "";
+            dateCreated = new DateTime();
+            type = 0;
+            password = "";
 
+        }
+
+        public PTUser(int userID, string userName, string password, DateTime dateCreated, int type )
+        {
+            this.userID = userID;
+            this.userName = userName;
+            this.password = password;
+            this.dateCreated = dateCreated;
+            this.type = type;
         }
 
         public PTUser(JsonObject jsonObject)
@@ -34,9 +49,9 @@ namespace PTWinMobileApp
             JsonObject ptUserObject = jsonObject.GetNamedObject(formkey, null);
             if (ptUserObject != null)
             {
-                userID = ptUserObject.GetNamedString(usernamekey, "");
-                date = ptUserObject.GetNamedString(datekey, "");
-                version = ptUserObject.GetNamedString(versionkey, "");
+                //userID = ptUserObject.GetNamedString(usernamekey, "");
+                //date = ptUserObject.GetNamedString(datekey, "");
+                //version = ptUserObject.GetNamedString(versionkey, "");
 
             }
         }
@@ -65,6 +80,7 @@ namespace PTWinMobileApp
                 userID = value;
             }
         }
+
 
         public string Date
         {

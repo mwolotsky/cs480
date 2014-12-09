@@ -33,7 +33,7 @@ namespace PTWinMobileApp
         private int weightOunces;
         private string phone;
         private string employer;
-        private ArrayList<> 
+        private List<Form> listOfForms;
 
         public PTPatient()
         {
@@ -48,6 +48,7 @@ namespace PTWinMobileApp
             weightOunces = 0;
             phone = "0";
             employer = "";
+            listOfForms = new List<Form>();
 
         }
 
@@ -171,10 +172,6 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
                 age = value;
             }
         }
@@ -187,10 +184,6 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
                 heightFeet = value;
             }
         }
@@ -215,10 +208,6 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
                 weightPounds = value;
             }
         }
@@ -262,6 +251,17 @@ namespace PTWinMobileApp
                     throw new ArgumentNullException("value");
                 }
                 employer = value;
+            }
+        }
+        public List<Form> ListOfForms
+        {
+            get
+            {
+                return ListOfForms;
+            }
+            set
+            {
+                listOfForms = value;
             }
         }
     }

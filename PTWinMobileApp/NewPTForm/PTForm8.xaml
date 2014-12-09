@@ -9,10 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock FontSize="20" Margin="10,32,142,549" >
-        	<Run Text="What makes your condition "/>
-        	<LineBreak/>
-        	<Run Text="better(check all that apply):"/>
+        <TextBlock FontSize="20" Margin="10,32,142,574" >
+        	<Run Text="Medical Information "/>
         </TextBlock>
         <CheckBox x:Name="cb_diff_swallowing" Content="Difficulty Swallowing" Margin="10,88,0,0" Height="64" />
         <CheckBox x:Name="cb_arthritus" Content="Arthritus" Margin="10,133,0,0" />
