@@ -62,7 +62,8 @@ namespace PTWinMobileApp
                     ((Form)info[Form.FORM]).medicalInformation.Add(cb.Content.ToString());
                 }
             }
-
+            ((PTPatient)info[PTPatient.PATIENT]).ListOfForms.Add((Form)info[Form.FORM]);
+            ((PTUser)info[PTUser.USER]).listOfPatients.Add(((PTPatient)info[PTPatient.PATIENT]));
             this.Frame.Navigate(typeof(MainMenu), info);
 
 
