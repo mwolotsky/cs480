@@ -7,7 +7,13 @@ Assets\WideLogo.scale-240.png
 App.xbf
 Login.xbf
 MainMenu.xbf
-PTForm.xbf
-PTForm2.xbf
+NewPTForm\PTForm.xbf
+NewPTForm\PTForm2.xbf
+NewPTForm\PTForm3.xbf
+NewPTForm\PTForm4.xbf
+NewPTForm\PTForm5.xbf
+NewPTForm\PTForm6.xbf
+NewPTForm\PTForm7.xbf
+NewPTForm\PTForm8.xbf
 PTWinMobileApp.xr.xml
 SignUp.xbf

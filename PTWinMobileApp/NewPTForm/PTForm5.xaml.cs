@@ -20,19 +20,17 @@ namespace PTWinMobileApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PTForm2 : Page
+    public sealed partial class PTForm5 : Page
     {
-        public PTForm2()
+        public PTForm5()
         {
             this.InitializeComponent();
-            
         }
 
         public void NextStepClicked(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PTForm3));
+            this.Frame.Navigate(typeof(PTForm6));
         }
-
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>
@@ -40,7 +38,6 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
         }
     }
 }

@@ -26,10 +26,12 @@ namespace PTWinMobileApp
         private string occupation;
         private int patientnumber;
         private int age;
-        private string birthdate;
-        private string height;
-        private double weight;
-        private double phone;
+        private DateTime birthdate;
+        private int heightFeet;
+        private int heightInches;
+        private int weightPounds;
+        private int weightOunces;
+        private string phone;
         private string employer;
 
         public PTPatient()
@@ -111,7 +113,7 @@ namespace PTWinMobileApp
                 lname = value;
             }
         }
-        public double Patientnumber
+        public int Patientnumber
         {
             get
             {
@@ -142,7 +144,7 @@ namespace PTWinMobileApp
             }
         }
 
-        public string Birthdate {
+        public DateTime Birthdate {
             get
             {
                 return birthdate;
@@ -156,7 +158,7 @@ namespace PTWinMobileApp
                 birthdate = value;
             }
         }
-        public double Age
+        public int Age
         {
             get
             {
@@ -172,11 +174,11 @@ namespace PTWinMobileApp
             }
         }
 
-        public string Height
+        public int HeightFeet
         {
             get
             {
-                return height;
+                return heightFeet;
             }
             set
             {
@@ -184,14 +186,14 @@ namespace PTWinMobileApp
                 {
                     throw new ArgumentNullException("value");
                 }
-                height = value;
+                heightFeet = value;
             }
         }
-        public double Weight
+        public int WeightPounds
         {
             get
             {
-                return weight;
+                return weightPounds;
             }
             set
             {
@@ -199,7 +201,18 @@ namespace PTWinMobileApp
                 {
                     throw new ArgumentNullException("value");
                 }
-                weight = value;
+                weightPounds = value;
+            }
+        }
+        public int WeightOunces
+        {
+            get
+            {
+                return weightOunces;
+            }
+            set
+            {
+                weightOunces = value;
             }
         }
         public string Phone

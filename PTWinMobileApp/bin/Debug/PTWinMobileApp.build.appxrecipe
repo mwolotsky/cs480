@@ -7,26 +7,17 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>25e069a6-8f7d-4ce1-92a1-fb9d193e8364</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\PTWinMobileApp.exe">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\PTWinMobileApp.exe">
       <PackagePath>PTWinMobileApp.exe</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.Common.winmd">
-      <PackagePath>Microsoft.Advertising.Mobile.Common.winmd</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.Display.winmd">
-      <PackagePath>Microsoft.Advertising.Mobile.Display.winmd</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI.winmd">
-      <PackagePath>Microsoft.Advertising.Mobile.UI.winmd</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -34,61 +25,70 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI\Web\bootstrap.html">
-      <PackagePath>Microsoft.Advertising.Mobile.UI\Web\bootstrap.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI\Themes\Generic.xbf">
-      <PackagePath>Microsoft.Advertising.Mobile.UI\Themes\Generic.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Advertising.Mobile.Display\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.UI\Web\Ormma.js">
-      <PackagePath>Microsoft.Advertising.Mobile.UI\Web\Ormma.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\PTForm2.xbf">
-      <PackagePath>PTForm2.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\NewPTForm\PTForm2.xbf">
+      <PackagePath>NewPTForm\PTForm2.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\MainMenu.xbf">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\MainMenu.xbf">
       <PackagePath>MainMenu.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\PTForm.xbf">
-      <PackagePath>PTForm.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\NewPTForm\PTForm.xbf">
+      <PackagePath>NewPTForm\PTForm.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\Login.xbf">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\Login.xbf">
       <PackagePath>Login.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\SignUp.xbf">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\NewPTForm\PTForm3.xbf">
+      <PackagePath>NewPTForm\PTForm3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\NewPTForm\PTForm4.xbf">
+      <PackagePath>NewPTForm\PTForm4.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\NewPTForm\PTForm5.xbf">
+      <PackagePath>NewPTForm\PTForm5.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\NewPTForm\PTForm6.xbf">
+      <PackagePath>NewPTForm\PTForm6.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\NewPTForm\PTForm7.xbf">
+      <PackagePath>NewPTForm\PTForm7.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\NewPTForm\PTForm8.xbf">
+      <PackagePath>NewPTForm\PTForm8.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\SignUp.xbf">
       <PackagePath>SignUp.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\PTWinMobileApp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\PTWinMobileApp.xr.xml">
       <PackagePath>PTWinMobileApp.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\FailQuality\documents\visual studio 2013\Projects\PTWinMobileApp\PTWinMobileApp\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

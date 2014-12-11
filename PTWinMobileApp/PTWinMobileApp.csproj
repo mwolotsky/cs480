@@ -88,22 +88,40 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PTForm2.xaml.cs">
+    <Compile Include="Form.cs" />
+    <Compile Include="NewPTForm\PTForm2.xaml.cs">
       <DependentUpon>PTForm2.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PTForm.xaml.cs">
+    <Compile Include="NewPTForm\PTForm.xaml.cs">
       <DependentUpon>PTForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PTForm3.xaml.cs">
+    <Compile Include="NewPTForm\PTForm3.xaml.cs">
       <DependentUpon>PTForm3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NewPTForm\PTForm4.xaml.cs">
+      <DependentUpon>PTForm4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewPTForm\PTForm5.xaml.cs">
+      <DependentUpon>PTForm5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewPTForm\PTForm6.xaml.cs">
+      <DependentUpon>PTForm6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewPTForm\PTForm7.xaml.cs">
+      <DependentUpon>PTForm7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewPTForm\PTForm8.xaml.cs">
+      <DependentUpon>PTForm8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PTPatient.cs" />
+    <Compile Include="PTUser.cs" />
     <Compile Include="SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
@@ -126,7 +144,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="PTForm2.xaml">
+    <Page Include="NewPTForm\PTForm2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -134,7 +152,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PTForm.xaml">
+    <Page Include="NewPTForm\PTForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,7 +160,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PTForm3.xaml">
+    <Page Include="NewPTForm\PTForm3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewPTForm\PTForm4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewPTForm\PTForm5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewPTForm\PTForm6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewPTForm\PTForm7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewPTForm\PTForm8.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -151,6 +189,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

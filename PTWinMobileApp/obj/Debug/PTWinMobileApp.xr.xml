@@ -18,44 +18,58 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Text" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Width" />
       <RootProperty Name="Style" />
+      <RootProperty Name="Inlines" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
-      <RootProperty Name="Height" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="PTWinMobileApp.PTForm2" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="PTWinMobileApp.MainMenu" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="InputScope" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootEvent Name="TextChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="PTWinMobileApp.PTForm2" />
+    <RootType FullName="PTWinMobileApp.MainMenu" />
+    <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
+      <RootMethod Name="GetName" />
+      <RootMethod Name="SetName" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Input.InputScope">
+      <RootProperty Name="Names" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Input.InputScopeName">
+      <RootProperty Name="NameValue" />
     </RootType>
     <RootType FullName="PTWinMobileApp.PTForm" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
@@ -67,6 +81,21 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="PTWinMobileApp.Login" />
+    <RootType FullName="PTWinMobileApp.PTForm3" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="PTWinMobileApp.PTForm4" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
+    <RootType FullName="PTWinMobileApp.PTForm5" />
+    <RootType FullName="PTWinMobileApp.PTForm6" />
+    <RootType FullName="PTWinMobileApp.PTForm7" />
+    <RootType FullName="PTWinMobileApp.PTForm8" />
     <RootType FullName="PTWinMobileApp.SignUp" />
   </Roots.RootTypes>
 </Roots>

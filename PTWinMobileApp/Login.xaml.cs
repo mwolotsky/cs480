@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace PTWinMobileApp
@@ -24,15 +25,19 @@ namespace PTWinMobileApp
         public Login()
         {
             this.InitializeComponent();
-
+            PTUser pt = new PTUser(101010, "pt_user11", "password123", new DateTime(), PTUser.PT);
+            PTUser manager = new PTUser(100100, "manager_uswer1", "pass123", new DateTime(), PTUser.MANAGER);
             this.NavigationCacheMode = NavigationCacheMode.Required;
-
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
         }
 
         public void LoginClicked(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainMenu));
+            if (true) // check userType
+            {
+                this.Frame.Navigate(typeof(MainMenu));
+            }
         }
 
         public void SignUpClicked(object sender, RoutedEventArgs e)
@@ -40,6 +45,19 @@ namespace PTWinMobileApp
             this.Frame.Navigate(typeof(SignUp));
         }
 
+        public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+            {
+                // Clear the status block when navigating 
+                //NotifyUser(String.Empty, NotifyType.StatusMessage);
+
+                this.Frame.GoBack();
+
+                //Indicate the back button press is handled so the app does not exit 
+                e.Handled = true;
+            }
+        }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>

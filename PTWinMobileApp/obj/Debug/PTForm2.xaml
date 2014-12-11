@@ -9,12 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Margin="10,522,0,0" Text="Occupation"/>
-        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Margin="10,481,0,0" Text="Employer"/>
-        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Margin="10,440,0,0" Text="Currently Employed"/>
-        <RadioButton x:Name="rb_employed_yes" Height="65" Margin="205,423,0,0" Content="yes" Width="92"/>
-        <RadioButton x:Name="rb_employed_no" Margin="288,423,0,0" Content="no" Width="97"/>
+        <TextBlock FontSize="20" Text="Occupation" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Margin="7,180,0,0" />
+        <TextBox x:Name="tb_occupation" Margin="127,180,10,0" />
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Margin="7,96,0,0" Text="Employer"/>
+        <TextBox x:Name="tb_employer" Margin="127,96,10,0" />
 
+        <TextBlock FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Margin="7,38,0,0" Text="Employed"/>
+        <CheckBox x:Name="cb_employed_yes" Height="65" Margin="127,21,0,0" Content="Yes, Currently Employed" Width="263"/>
+        <Button x:ConnectionId='1' x:Name="bt_nextstep" Content="Next Step" Margin="281,550,0,33"                         />
     </Grid>
 </Page>
 
