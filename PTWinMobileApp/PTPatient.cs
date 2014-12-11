@@ -9,6 +9,9 @@ namespace PTWinMobileApp
 {
     class PTPatient
     {
+        public const int CLIENTS = 1;
+        public const int PATIENT = 2;
+        
         private const string patientkey = "Patient";
         private const string fnamekey = "Fname";
         private const string lnamekey = "Lname";

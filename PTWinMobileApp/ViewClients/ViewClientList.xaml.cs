@@ -22,7 +22,8 @@ namespace PTWinMobileApp
     /// </summary>
     public sealed partial class ViewClientList : Page
     {
-        List<object> info;
+        //List<object> info;
+        object[] info;
         public ViewClientList()
         {
             this.InitializeComponent();
@@ -47,10 +48,10 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            info = e.Parameter as List<object>;
+            info = e.Parameter as object[];
             if (info != null)
             {
-                PTUser thisUser = (PTUser)info.ElementAt(Login.USER);
+                PTUser thisUser = (PTUser)info[PTUser.USER];
                 List<string> names = new List<String>();
                 if (thisUser.listOfPatients.Count != 0)
                 {

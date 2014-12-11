@@ -9,6 +9,7 @@ namespace PTWinMobileApp
 {
     class Form
     {
+        public const int FORM = 3;
         public int ptNumber;
         public DateTime appointmentDate;
         public int version;
@@ -25,8 +26,8 @@ namespace PTWinMobileApp
         public int painLevelWorst;
         public List<string> listOfBetteringCodition;
         public List<string> listOfWorseningCondition;
-        public List<string> previousMedicalIntervention;
         public List<string> medicalIntervention;
+        public List<string> medicalInformation;
 
         public Form()
         {
@@ -46,8 +47,8 @@ namespace PTWinMobileApp
             painLevelWorst = 0;
             listOfBetteringCodition = new List<string>();
             listOfWorseningCondition = new List<string>();
-            previousMedicalIntervention = new List<string>();
             medicalIntervention = new List<string>();
+            medicalInformation = new List<string>();
         }
 
     }

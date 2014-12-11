@@ -9,13 +9,14 @@ namespace PTWinMobileApp
 {
     class PTUser
     {
+        public const int USER = 0;
         private const string formkey = "EvaluationForm";
         private const string usernamekey = "PTID";
         private const string datekey = "Date";
         private const string versionkey = "VersionNumber";
         private const string questionkey = "QuestionArray";
-        public static int PT = 100;
-        public static int MANAGER = 300;
+        public const int PT = 100;
+        public const int MANAGER = 300;
 
         private int userID;
         private string userName;

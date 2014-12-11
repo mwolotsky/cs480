@@ -22,7 +22,8 @@ namespace PTWinMobileApp
     /// </summary>
     public sealed partial class MainMenu : Page
     {
-        List<object> info;
+        //List<object> info;
+        object[] info;
         public MainMenu()
         {
             this.InitializeComponent();
@@ -38,7 +39,7 @@ namespace PTWinMobileApp
 
         public void ClientsClicked(object sender, RoutedEventArgs e)
         {
-            if(info != null && info.ElementAt(Login.USER) != null)
+            if(info != null && info.ElementAt(PTUser.USER) != null)
                 this.Frame.Navigate(typeof(ViewClientList), info);
         }
 
@@ -49,7 +50,7 @@ namespace PTWinMobileApp
 
         public void LogOutClicked(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Login));
+            this.Frame.Navigate(typeof(Login), info);
         }
 
         public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
@@ -68,7 +69,7 @@ namespace PTWinMobileApp
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            info = e.Parameter as List<object>;
+            info = e.Parameter as object[];
 
         }
     }

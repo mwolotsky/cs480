@@ -22,8 +22,9 @@ namespace PTWinMobileApp
     /// </summary>
     public sealed partial class PTForm4 : Page
     {
-        PTPatient patient;
-        List<object> info;
+        //PTPatient patient;
+        //List<object> info;
+        object[] info;
         public PTForm4()
         {
             this.InitializeComponent();
@@ -42,38 +43,38 @@ namespace PTWinMobileApp
             CheckBox constant = (CheckBox)FindName("cb_constant");
             TextBox painAtBest = (TextBox)FindName("tb_lvl_pain");
             TextBox painAtWorst = (TextBox)FindName("tb_lvl_pain_worst");
-            Form form = new Form();
+            
             
             if (treated.IsChecked == true)
             {
-                form.treated = true;
-                form.dateTreated = when.Date.DateTime;
-                form.numOfVisits = Convert.ToInt32(numVisit.Text);
+                ((Form)info[Form.FORM]).treated = true;
+                ((Form)info[Form.FORM]).dateTreated = when.Date.DateTime;
+                ((Form)info[Form.FORM]).numOfVisits = Convert.ToInt32(numVisit.Text);
 
                 
             }
             if (better.IsChecked == true)
             {
-                form.condition = better.Content.ToString();
+                ((Form)info[Form.FORM]).condition = better.Content.ToString();
             }
             else if (worse.IsChecked == true)
             {
-                form.condition = better.Content.ToString();
+                ((Form)info[Form.FORM]).condition = better.Content.ToString();
             }
             else
             {
-                form.condition = same.Content.ToString();
+                ((Form)info[Form.FORM]).condition = same.Content.ToString();
             }
 
             if (constant.IsChecked == true)
             {
-                form.symptomsConstant = true;
+                ((Form)info[Form.FORM]).symptomsConstant = true;
             }
 
-            form.painLevelBest = Convert.ToInt32(painAtBest.Text);
-            form.painLevelWorst = Convert.ToInt32(painAtWorst.Text);
+            ((Form)info[Form.FORM]).painLevelBest = Convert.ToInt32(painAtBest.Text);
+            ((Form)info[Form.FORM]).painLevelWorst = Convert.ToInt32(painAtWorst.Text);
 
-            info.Add(form);
+            
 
             this.Frame.Navigate(typeof(PTForm5), info);
         }
@@ -98,7 +99,7 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            info = e.Parameter as List<object>;
+            info = e.Parameter as object[];
         }
     }
 }

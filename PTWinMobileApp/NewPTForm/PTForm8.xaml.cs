@@ -22,14 +22,50 @@ namespace PTWinMobileApp
     /// </summary>
     public sealed partial class PTForm8 : Page
     {
+        object[] info;
         public PTForm8()
         {
             this.InitializeComponent();
         }
 
-        public void NextStepClicked(object sender, RoutedEventArgs e)
+        public void CompleteClicked(object sender, RoutedEventArgs e)
         {
-           
+            List<CheckBox> cbList = new List<CheckBox>();
+            cbList.Add((CheckBox)FindName("cb_diff_swalloing"));
+            cbList.Add((CheckBox)FindName("cb_arthritus"));
+            cbList.Add((CheckBox)FindName("cb_high_blood"));
+            cbList.Add((CheckBox)FindName("cb_heart_trouble"));
+            cbList.Add((CheckBox)FindName("cb_pacemaker"));
+            cbList.Add((CheckBox)FindName("cb_epilepsy"));
+            cbList.Add((CheckBox)FindName("cb_drug_abuse"));
+            cbList.Add((CheckBox)FindName("cb_myfacial"));
+            cbList.Add((CheckBox)FindName("cb_cancer"));
+            cbList.Add((CheckBox)FindName("cb_motion_sickness"));
+            cbList.Add((CheckBox)FindName("cb_fever"));
+            cbList.Add((CheckBox)FindName("cb_weight_loss"));
+            cbList.Add((CheckBox)FindName("cb_blood_clot"));
+            cbList.Add((CheckBox)FindName("cb_smoker"));
+            cbList.Add((CheckBox)FindName("cb_shortness"));
+            cbList.Add((CheckBox)FindName("cb_diabetes"));
+            cbList.Add((CheckBox)FindName("cb_stroke"));
+            cbList.Add((CheckBox)FindName("cb_amneia"));
+            cbList.Add((CheckBox)FindName("cb_bleeding"));
+            cbList.Add((CheckBox)FindName("cb_hiv"));
+            cbList.Add((CheckBox)FindName("cb_alcohol"));
+            cbList.Add((CheckBox)FindName("cb_depression"));
+            cbList.Add((CheckBox)FindName("cb_pregnant"));
+
+            foreach (CheckBox cb in cbList)
+            {
+                if (cb.IsChecked == true)
+                {
+                    ((Form)info[Form.FORM]).medicalInformation.Add(cb.Content.ToString());
+                }
+            }
+
+            this.Frame.Navigate(typeof(MainMenu), info);
+
+
         }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -38,6 +74,7 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            info = e.Parameter as object[];
         }
     }
 }

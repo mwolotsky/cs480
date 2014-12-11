@@ -23,7 +23,8 @@ namespace PTWinMobileApp
     public sealed partial class PTForm : Page
     {
         PTPatient patient;
-        List<object> info;
+       // List<object> info;
+        object[] info;
         public PTForm()
         {
             this.InitializeComponent();
@@ -57,7 +58,7 @@ namespace PTWinMobileApp
                 patient.WeightPounds = Convert.ToInt32(wLb.Text);
                 patient.Phone = phoneNum.Text;
             }
-            info.Add(patient);
+            info[PTPatient.PATIENT] = patient;
             this.Frame.Navigate(typeof(PTForm2), info);
         }
 
@@ -78,7 +79,7 @@ namespace PTWinMobileApp
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            info = e.Parameter as List<object>;
+            info = e.Parameter as object[];
         }
 
         private void tb_fname_TextChanged(object sender, TextChangedEventArgs e)

@@ -22,7 +22,8 @@ namespace PTWinMobileApp
     /// </summary>
     public sealed partial class PTForm2 : Page
     {
-        List<object> info;
+        //List<object> info;
+        object[] info;
         PTPatient patient;
         public PTForm2()
         {
@@ -48,8 +49,8 @@ namespace PTWinMobileApp
                 patient.Employer = "N/A";
                 patient.Occupation = "N/A";
             }
-            info.RemoveAt(3);
-            info.Add(patient);
+
+            info[PTPatient.PATIENT] = patient;
             this.Frame.Navigate(typeof(PTForm3),info);
         }
 
@@ -72,7 +73,7 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            info = e.Parameter as List<object>;
+            info = e.Parameter as object[];
         }
     }
 }

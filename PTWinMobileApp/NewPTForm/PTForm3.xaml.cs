@@ -24,6 +24,7 @@ namespace PTWinMobileApp
     {
         PTPatient patient;
         Form ptForm;
+        object[] info;
         public PTForm3()
         {
             this.InitializeComponent();
@@ -51,14 +52,31 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            patient = e.Parameter as PTPatient;
+            info = e.Parameter as object[];
+
+            TextBox ptnumber = (TextBox)FindName("tb_ptnumber");
+            ptnumber.Text = ((PTUser)info[PTUser.USER]).UserID.ToString();
+            ptForm = new Form();
+            ptForm.ptNumber = ((PTUser)info[PTUser.USER]).UserID;
+            
         }
 
         public void NextStepClicked(object sender, RoutedEventArgs e)
         {
-            ptForm = new Form();
+           
+            DatePicker dateOf = (DatePicker)FindName("dp_date_of_appointment");
+            TextBox infoInjury = (TextBox)FindName("tb_complaint");
+            DatePicker dateOfInjury = (DatePicker)FindName("dp_date_of_injury");
+            DatePicker dateOfSurgery = (DatePicker)FindName("dp_date_of_surger");
+            TextBox sustainedInj = (TextBox)FindName("tb_sustain_injury");
+            ptForm.appointmentDate = dateOf.Date.DateTime;
+            ptForm.chiefComplaint = infoInjury.Text;
+            ptForm.dateOfInjury = dateOfInjury.Date.DateTime;
+            ptForm.dateOfSurgery = dateOfSurgery.Date.DateTime;
+            ptForm.injurySustained = sustainedInj.Text;
 
-            this.Frame.Navigate(typeof(PTForm4));
+            info[Form.FORM] = ptForm;
+            this.Frame.Navigate(typeof(PTForm4), info);
         }
     }
 }

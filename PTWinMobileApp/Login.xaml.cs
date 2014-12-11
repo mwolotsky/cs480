@@ -25,14 +25,13 @@ namespace PTWinMobileApp
     /// 
     public sealed partial class Login : Page
     {
-        public const int USER = 0;
-        public const int CLIENTS = 1;
-        public const int FORM = 2;
 
 
-        List<object> info = new List<object>();
+        //List<object> info = new List<object>(4);
+        object[] info = new object[4];
         Dictionary<string, PTUser> users = new Dictionary<string, PTUser>();
         Dictionary<string, PTPatient> clients = new Dictionary<string, PTPatient>();
+
         public Login()
         {
             this.InitializeComponent();
@@ -60,23 +59,17 @@ namespace PTWinMobileApp
                 {
                     if (thisUser.Type == PTUser.PT)
                     {
-                        info.Add(thisUser);
-                        info.Add(clients);
+                        info[PTUser.USER] =  thisUser;
+                        info[PTPatient.CLIENTS]= clients;
                         this.Frame.Navigate(typeof(MainMenu), info);
                     }
-                        
-                    
                 }
-                
             }
-            
-
-            
         }
 
         public void SignUpClicked(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SignUp));
+            this.Frame.Navigate(typeof(SignUp), users);
         }
 
         public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
