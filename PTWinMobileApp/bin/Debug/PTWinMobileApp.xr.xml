@@ -97,5 +97,15 @@
     <RootType FullName="PTWinMobileApp.PTForm7" />
     <RootType FullName="PTWinMobileApp.PTForm8" />
     <RootType FullName="PTWinMobileApp.SignUp" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
+      <RootProperty Name="FontSize" />
+    </RootType>
+    <RootType FullName="PTWinMobileApp.ViewClientList" />
   </Roots.RootTypes>
 </Roots>

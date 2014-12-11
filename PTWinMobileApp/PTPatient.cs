@@ -34,6 +34,7 @@ namespace PTWinMobileApp
         private string phone;
         private string employer;
         private List<Form> listOfForms;
+        private static int patientNumber = 0;
 
         public PTPatient()
         {
@@ -50,6 +51,24 @@ namespace PTWinMobileApp
             employer = "";
             listOfForms = new List<Form>();
 
+        }
+
+        public PTPatient(string fname, string lname, string occupation,
+            DateTime birthdate, int heightFeet, int heightInches, int weightPounds, int weightOunces, string phone,
+            string employer)
+        {
+            this.fname= fname;
+            this.lname = lname;
+            this.occupation = occupation;
+            this.patientnumber = patientNumber++;
+            this.birthdate = birthdate;
+            this.heightFeet = heightFeet;
+            this.heightInches = heightInches;
+            this.weightPounds = weightPounds;
+            this.weightOunces = weightOunces;
+            this.phone = phone;
+            this.employer = employer;
+            this.listOfForms = new List<Form>();
         }
 
         public PTPatient(JsonObject jsonObject)

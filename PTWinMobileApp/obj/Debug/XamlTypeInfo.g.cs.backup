@@ -124,21 +124,37 @@ namespace PTWinMobileApp.PTWinMobileApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[6];
-            _typeNameTable[0] = "PTWinMobileApp.MainMenu";
+            _typeNameTable = new string[14];
+            _typeNameTable[0] = "PTWinMobileApp.PTForm2";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "PTWinMobileApp.PTForm";
-            _typeNameTable[4] = "PTWinMobileApp.Login";
-            _typeNameTable[5] = "PTWinMobileApp.SignUp";
+            _typeNameTable[3] = "PTWinMobileApp.MainMenu";
+            _typeNameTable[4] = "PTWinMobileApp.PTForm";
+            _typeNameTable[5] = "PTWinMobileApp.Login";
+            _typeNameTable[6] = "PTWinMobileApp.PTForm3";
+            _typeNameTable[7] = "PTWinMobileApp.PTForm4";
+            _typeNameTable[8] = "PTWinMobileApp.PTForm5";
+            _typeNameTable[9] = "PTWinMobileApp.PTForm6";
+            _typeNameTable[10] = "PTWinMobileApp.PTForm7";
+            _typeNameTable[11] = "PTWinMobileApp.PTForm8";
+            _typeNameTable[12] = "PTWinMobileApp.SignUp";
+            _typeNameTable[13] = "PTWinMobileApp.ViewClientList";
 
-            _typeTable = new global::System.Type[6];
-            _typeTable[0] = typeof(global::PTWinMobileApp.MainMenu);
+            _typeTable = new global::System.Type[14];
+            _typeTable[0] = typeof(global::PTWinMobileApp.PTForm2);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::PTWinMobileApp.PTForm);
-            _typeTable[4] = typeof(global::PTWinMobileApp.Login);
-            _typeTable[5] = typeof(global::PTWinMobileApp.SignUp);
+            _typeTable[3] = typeof(global::PTWinMobileApp.MainMenu);
+            _typeTable[4] = typeof(global::PTWinMobileApp.PTForm);
+            _typeTable[5] = typeof(global::PTWinMobileApp.Login);
+            _typeTable[6] = typeof(global::PTWinMobileApp.PTForm3);
+            _typeTable[7] = typeof(global::PTWinMobileApp.PTForm4);
+            _typeTable[8] = typeof(global::PTWinMobileApp.PTForm5);
+            _typeTable[9] = typeof(global::PTWinMobileApp.PTForm6);
+            _typeTable[10] = typeof(global::PTWinMobileApp.PTForm7);
+            _typeTable[11] = typeof(global::PTWinMobileApp.PTForm8);
+            _typeTable[12] = typeof(global::PTWinMobileApp.SignUp);
+            _typeTable[13] = typeof(global::PTWinMobileApp.ViewClientList);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -173,10 +189,18 @@ namespace PTWinMobileApp.PTWinMobileApp_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainMenu() { return new global::PTWinMobileApp.MainMenu(); }
-        private object Activate_3_PTForm() { return new global::PTWinMobileApp.PTForm(); }
-        private object Activate_4_Login() { return new global::PTWinMobileApp.Login(); }
-        private object Activate_5_SignUp() { return new global::PTWinMobileApp.SignUp(); }
+        private object Activate_0_PTForm2() { return new global::PTWinMobileApp.PTForm2(); }
+        private object Activate_3_MainMenu() { return new global::PTWinMobileApp.MainMenu(); }
+        private object Activate_4_PTForm() { return new global::PTWinMobileApp.PTForm(); }
+        private object Activate_5_Login() { return new global::PTWinMobileApp.Login(); }
+        private object Activate_6_PTForm3() { return new global::PTWinMobileApp.PTForm3(); }
+        private object Activate_7_PTForm4() { return new global::PTWinMobileApp.PTForm4(); }
+        private object Activate_8_PTForm5() { return new global::PTWinMobileApp.PTForm5(); }
+        private object Activate_9_PTForm6() { return new global::PTWinMobileApp.PTForm6(); }
+        private object Activate_10_PTForm7() { return new global::PTWinMobileApp.PTForm7(); }
+        private object Activate_11_PTForm8() { return new global::PTWinMobileApp.PTForm8(); }
+        private object Activate_12_SignUp() { return new global::PTWinMobileApp.SignUp(); }
+        private object Activate_13_ViewClientList() { return new global::PTWinMobileApp.ViewClientList(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -188,9 +212,9 @@ namespace PTWinMobileApp.PTWinMobileApp_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  PTWinMobileApp.MainMenu
+            case 0:   //  PTWinMobileApp.PTForm2
                 userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainMenu;
+                userType.Activator = Activate_0_PTForm2;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -203,23 +227,79 @@ namespace PTWinMobileApp.PTWinMobileApp_XamlTypeInfo
                 xamlType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  PTWinMobileApp.PTForm
+            case 3:   //  PTWinMobileApp.MainMenu
                 userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_PTForm;
+                userType.Activator = Activate_3_MainMenu;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  PTWinMobileApp.Login
+            case 4:   //  PTWinMobileApp.PTForm
                 userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Login;
+                userType.Activator = Activate_4_PTForm;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  PTWinMobileApp.SignUp
+            case 5:   //  PTWinMobileApp.Login
                 userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_SignUp;
+                userType.Activator = Activate_5_Login;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  PTWinMobileApp.PTForm3
+                userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_PTForm3;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  PTWinMobileApp.PTForm4
+                userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_PTForm4;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  PTWinMobileApp.PTForm5
+                userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_PTForm5;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  PTWinMobileApp.PTForm6
+                userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_PTForm6;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  PTWinMobileApp.PTForm7
+                userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_PTForm7;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  PTWinMobileApp.PTForm8
+                userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_PTForm8;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  PTWinMobileApp.SignUp
+                userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_SignUp;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  PTWinMobileApp.ViewClientList
+                userType = new global::PTWinMobileApp.PTWinMobileApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_ViewClientList;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

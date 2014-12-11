@@ -15,6 +15,8 @@ namespace PTWinMobileApp
     partial class PTForm4 : global::Windows.UI.Xaml.Controls.Page
     {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
+        private global::Windows.UI.Xaml.Controls.CheckBox cb_checked; 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.DatePicker dp_when_treated; 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks"," 4.0.0.0")]
         private global::Windows.UI.Xaml.Controls.TextBox tb_num_visits; 
@@ -45,6 +47,7 @@ namespace PTWinMobileApp
             _contentLoaded = true;
             global::Windows.UI.Xaml.Application.LoadComponent(this, new global::System.Uri("ms-appx:///NewPTForm/PTForm4.xaml"), global::Windows.UI.Xaml.Controls.Primitives.ComponentResourceLocation.Application);
  
+            cb_checked = (global::Windows.UI.Xaml.Controls.CheckBox)this.FindName("cb_checked");
             dp_when_treated = (global::Windows.UI.Xaml.Controls.DatePicker)this.FindName("dp_when_treated");
             tb_num_visits = (global::Windows.UI.Xaml.Controls.TextBox)this.FindName("tb_num_visits");
             rb_better = (global::Windows.UI.Xaml.Controls.RadioButton)this.FindName("rb_better");

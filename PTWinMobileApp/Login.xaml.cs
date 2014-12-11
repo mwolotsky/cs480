@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+using Windows.UI.Notifications;
+using Windows.Data.Xml.Dom;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace PTWinMobileApp
@@ -20,13 +22,26 @@ namespace PTWinMobileApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// 
     public sealed partial class Login : Page
     {
+        public const int USER = 0;
+        public const int CLIENTS = 1;
+        public const int FORM = 2;
+
+
+        List<object> info = new List<object>();
+        Dictionary<string, PTUser> users = new Dictionary<string, PTUser>();
+        Dictionary<string, PTPatient> clients = new Dictionary<string, PTPatient>();
         public Login()
         {
             this.InitializeComponent();
             PTUser pt = new PTUser(101010, "pt_user11", "password123", new DateTime(), PTUser.PT);
             PTUser manager = new PTUser(100100, "manager_uswer1", "pass123", new DateTime(), PTUser.MANAGER);
+            PTPatient p1 = new PTPatient("John", "Smith", "Electrician", new DateTime(), 5, 7, 140, 5, "5553724321", "Edison");
+            pt.listOfPatients.Add(p1);
+            users.Add(pt.UserName, pt);
+            users.Add(manager.UserName, manager);
             this.NavigationCacheMode = NavigationCacheMode.Required;
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
@@ -34,10 +49,29 @@ namespace PTWinMobileApp
 
         public void LoginClicked(object sender, RoutedEventArgs e)
         {
-            if (true) // check userType
+            TextBox userName = (TextBox)FindName("tb_username");
+            PasswordBox password = (PasswordBox)FindName("pb_password");
+            PTUser thisUser;
+            users.TryGetValue(userName.Text, out thisUser);
+
+            if (thisUser != null) // check userType
             {
-                this.Frame.Navigate(typeof(MainMenu));
+                if (thisUser.Password.Equals(password.Password))
+                {
+                    if (thisUser.Type == PTUser.PT)
+                    {
+                        info.Add(thisUser);
+                        info.Add(clients);
+                        this.Frame.Navigate(typeof(MainMenu), info);
+                    }
+                        
+                    
+                }
+                
             }
+            
+
+            
         }
 
         public void SignUpClicked(object sender, RoutedEventArgs e)

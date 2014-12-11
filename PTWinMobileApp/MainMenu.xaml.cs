@@ -22,6 +22,7 @@ namespace PTWinMobileApp
     /// </summary>
     public sealed partial class MainMenu : Page
     {
+        List<object> info;
         public MainMenu()
         {
             this.InitializeComponent();
@@ -32,12 +33,13 @@ namespace PTWinMobileApp
 
         public void NewFormClicked(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PTForm));
+            this.Frame.Navigate(typeof(PTForm), info);
         }
 
-        public void RecentFormClicked(object sender, RoutedEventArgs e)
+        public void ClientsClicked(object sender, RoutedEventArgs e)
         {
-
+            if(info != null && info.ElementAt(Login.USER) != null)
+                this.Frame.Navigate(typeof(ViewClientList), info);
         }
 
         public void SearchFormClicked(object sender, RoutedEventArgs e)
@@ -66,6 +68,8 @@ namespace PTWinMobileApp
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            info = e.Parameter as List<object>;
+
         }
     }
 }

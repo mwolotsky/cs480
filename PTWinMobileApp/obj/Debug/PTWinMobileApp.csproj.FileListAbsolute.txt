@@ -168,3 +168,8 @@ C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\
 C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\obj\Debug\qualifiers.txt.intermediate
 C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\obj\Debug\ProjectArchitectures.txt
+C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\obj\Debug\ViewClients\ViewClientList.g.i.cs
+C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\obj\Debug\ViewClients\ViewClientList.g.cs
+C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\obj\Debug\ViewClients\ViewClientList.xaml
+C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\obj\Debug\ViewClients\ViewClientList.xbf
+C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewClients\ViewClientList.xbf

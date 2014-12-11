@@ -10,7 +10,7 @@
 
     <Grid>
         <TextBlock Text="Have you gotten treated before?" FontSize="20" Margin="10,48,97,564" />
-        <CheckBox Content="Yes, I've been treated before" Margin="43,65,0,0" />
+        <CheckBox x:Name="cb_checked" Content="Yes, I've been treated before" Margin="43,65,0,0" />
         <TextBlock Text="When?" FontSize="20" Margin="10,131,318,481" />
         <DatePicker x:Name="dp_when_treated" Margin="82,115,18,472" />
         <TextBlock Text="How many visits?" FontSize="20" Margin="10,212,232,403" />

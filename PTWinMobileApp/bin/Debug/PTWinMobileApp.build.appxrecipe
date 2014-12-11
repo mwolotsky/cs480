@@ -85,6 +85,9 @@
     <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\SignUp.xbf">
       <PackagePath>SignUp.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewClients\ViewClientList.xbf">
+      <PackagePath>ViewClients\ViewClientList.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\PTWinMobileApp.xr.xml">
       <PackagePath>PTWinMobileApp.xr.xml</PackagePath>
     </AppxPackagedFile>

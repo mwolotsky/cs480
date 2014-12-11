@@ -23,6 +23,7 @@ namespace PTWinMobileApp
     public sealed partial class PTForm : Page
     {
         PTPatient patient;
+        List<object> info;
         public PTForm()
         {
             this.InitializeComponent();
@@ -49,14 +50,15 @@ namespace PTWinMobileApp
                 patient = new PTPatient();
                 patient.Fname = fName.Text;
                 patient.Lname = lName.Text;
-                patient.Patientnumber = Convert.ToInt32(pNumber.Text);
+                //patient.Patientnumber = Convert.ToInt32(pNumber.Text);
                 patient.Birthdate = bDay.Date.DateTime;
                 patient.HeightFeet = Convert.ToInt32(hFeet.Text);
                 patient.HeightInches = Convert.ToInt32(hIn.Text);
                 patient.WeightPounds = Convert.ToInt32(wLb.Text);
                 patient.Phone = phoneNum.Text;
             }
-            this.Frame.Navigate(typeof(PTForm2), patient);
+            info.Add(patient);
+            this.Frame.Navigate(typeof(PTForm2), info);
         }
 
         public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
@@ -76,6 +78,7 @@ namespace PTWinMobileApp
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            info = e.Parameter as List<object>;
         }
 
         private void tb_fname_TextChanged(object sender, TextChangedEventArgs e)

@@ -10,7 +10,7 @@
 
     <Grid>
         <Button x:Name="btn_new_form" Content="New Form" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="366" Click="NewFormClicked" />
-        <Button x:Name="btn_recent_form" Content="Recent Form" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="366" Click="RecentFormClicked" />
+        <Button x:Name="btn_recent_form" Content="View Clients" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="366" Click="ClientsClicked" />
         <Button x:Name="btn_search_form" Content="Search Form" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="366" Click="SearchFormClicked" />
         <Button x:Name="btn_log_out" Content="Log Out" HorizontalAlignment ="Left" Margin="10,582,0,0" VerticalAlignment="Top" Width="366" Click="LogOutClicked" />
     </Grid>

@@ -14,8 +14,8 @@ namespace PTWinMobileApp
         private const string datekey = "Date";
         private const string versionkey = "VersionNumber";
         private const string questionkey = "QuestionArray";
-        public static const int PT = 100;
-        public static const int MANAGER = 300;
+        public static int PT = 100;
+        public static int MANAGER = 300;
 
         private int userID;
         private string userName;
@@ -23,6 +23,7 @@ namespace PTWinMobileApp
         private int type;
         private DateTime dateCreated;
 
+        public List<PTPatient> listOfPatients = new List<PTPatient>();
 
         public PTUser()
         {
@@ -59,13 +60,26 @@ namespace PTWinMobileApp
         public JsonObject ToJsonObject()
         {
             JsonObject ptUserObject = new JsonObject();
-            ptUserObject.SetNamedValue(usernamekey, JsonValue.CreateStringValue(userID));
-            ptUserObject.SetNamedValue(datekey, JsonValue.CreateStringValue(date));
-            ptUserObject.SetNamedValue(versionkey, JsonValue.CreateStringValue(version));
+            //ptUserObject.SetNamedValue(usernamekey, JsonValue.CreateStringValue(userID));
+            //ptUserObject.SetNamedValue(datekey, JsonValue.CreateStringValue(date));
+            //ptUserObject.SetNamedValue(versionkey, JsonValue.CreateStringValue(version));
             return ptUserObject;
         }
 
-        public string UserID
+        public string UserName
+        {
+            get
+            {
+                return userName;
+            }
+
+            set
+            {
+                userName = value;
+            }
+        }
+
+        public int UserID
         {
             get
             {
@@ -73,20 +87,16 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
                 userID = value;
             }
         }
 
 
-        public string Date
+        public DateTime DateCreated
         {
             get
             {
-                return date;
+                return dateCreated;
             }
             set
             {
@@ -94,23 +104,23 @@ namespace PTWinMobileApp
                 {
                     throw new ArgumentNullException("value");
                 }
-                date = value;
+                dateCreated = value;
             }
         }
 
-        public string Version
+        public string Password
         {
             get
             {
-                return version;
+                return password;
             }
-            set
+        }
+
+        public int Type
+        {
+            get
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
-                version = value;
+                return type;
             }
         }
     }

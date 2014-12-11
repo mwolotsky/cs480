@@ -9,24 +9,24 @@ namespace PTWinMobileApp
 {
     class Form
     {
-        int ptNumber;
-        DateTime appointmentDate;
-        int version;
-        string chiefComplaint;
-        DateTime dateOfInjury;
-        DateTime dateOfSurgery;
-        string injurySustained;
-        Boolean treated;
-        DateTime dateTreated;
-        int numOfVisits;
-        string condition;
-        Boolean symptomsConstant;
-        int painLevelBest;
-        int painLevelWorst;
-        List<string> listOfBetteringCodition;
-        List<string> listOfWorseningCondition;
-        List<string> previousMedicalIntervention;
-        List<string> medicalIntervention;
+        public int ptNumber;
+        public DateTime appointmentDate;
+        public int version;
+        public string chiefComplaint;
+        public DateTime dateOfInjury;
+        public DateTime dateOfSurgery;
+        public string injurySustained;
+        public bool treated;
+        public DateTime dateTreated;
+        public int numOfVisits;
+        public string condition;
+        public bool symptomsConstant;
+        public int painLevelBest;
+        public int painLevelWorst;
+        public List<string> listOfBetteringCodition;
+        public List<string> listOfWorseningCondition;
+        public List<string> previousMedicalIntervention;
+        public List<string> medicalIntervention;
 
         public Form()
         {
