@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Items" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
@@ -96,16 +99,32 @@
     <RootType FullName="PTWinMobileApp.PTForm6" />
     <RootType FullName="PTWinMobileApp.PTForm7" />
     <RootType FullName="PTWinMobileApp.PTForm8" />
-    <RootType FullName="PTWinMobileApp.SignUp" />
+    <RootType FullName="Windows.UI.Xaml.Data.CollectionViewSource">
+      <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Source" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Items" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
       <RootEvent Name="SelectionChanged" />
+      <RootEvent Name="ItemClick" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
-      <RootProperty Name="FontSize" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
     </RootType>
+    <RootType FullName="PTWinMobileApp.PatientFormList" />
+    <RootType FullName="PTWinMobileApp.SignUp" />
     <RootType FullName="PTWinMobileApp.ViewClientList" />
+    <RootType FullName="PTWinMobileApp.ViewForm" />
+    <RootType FullName="PTWinMobileApp.ViewForm2" />
+    <RootType FullName="PTWinMobileApp.ViewForm3" />
+    <RootType FullName="PTWinMobileApp.ViewForm4" />
+    <RootType FullName="PTWinMobileApp.ViewForm5" />
+    <RootType FullName="PTWinMobileApp.ViewForm6" />
+    <RootType FullName="PTWinMobileApp.ViewForm7" />
+    <RootType FullName="PTWinMobileApp.ViewForm8" />
   </Roots.RootTypes>
 </Roots>

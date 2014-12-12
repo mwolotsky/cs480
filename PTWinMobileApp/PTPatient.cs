@@ -118,10 +118,7 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
+
                 fname = value;
             }
         }
@@ -148,10 +145,7 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
+
                 patientnumber = value;
             }
         }
@@ -163,10 +157,7 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
+
                 occupation = value;
             }
         }
@@ -179,10 +170,7 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
+
                 birthdate = value;
             }
         }
@@ -252,10 +240,6 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
                 phone = value;
             }
         }
@@ -268,10 +252,7 @@ namespace PTWinMobileApp
             }
             set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
+
                 employer = value;
             }
         }
@@ -279,7 +260,7 @@ namespace PTWinMobileApp
         {
             get
             {
-                return ListOfForms;
+                return listOfForms;
             }
             set
             {

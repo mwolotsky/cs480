@@ -26,6 +26,8 @@ namespace PTWinMobileApp
         public PTForm5()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
         public void NextStepClicked(object sender, RoutedEventArgs e)
@@ -62,6 +64,19 @@ namespace PTWinMobileApp
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             info = e.Parameter as object[];
+        }
+        public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+            {
+                // Clear the status block when navigating 
+                //NotifyUser(String.Empty, NotifyType.StatusMessage);
+
+                this.Frame.GoBack();
+
+                //Indicate the back button press is handled so the app does not exit 
+                e.Handled = true;
+            }
         }
     }
 }

@@ -82,11 +82,38 @@
     <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\NewPTForm\PTForm8.xbf">
       <PackagePath>NewPTForm\PTForm8.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\PatientFormList.xbf">
+      <PackagePath>PatientFormList.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\SignUp.xbf">
       <PackagePath>SignUp.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewClients\ViewClientList.xbf">
       <PackagePath>ViewClients\ViewClientList.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewForm\ViewForm.xbf">
+      <PackagePath>ViewForm\ViewForm.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewForm\ViewForm2.xbf">
+      <PackagePath>ViewForm\ViewForm2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewForm\ViewForm3.xbf">
+      <PackagePath>ViewForm\ViewForm3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewForm\ViewForm4.xbf">
+      <PackagePath>ViewForm\ViewForm4.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewForm\ViewForm5.xbf">
+      <PackagePath>ViewForm\ViewForm5.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewForm\ViewForm6.xbf">
+      <PackagePath>ViewForm\ViewForm6.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewForm\ViewForm7.xbf">
+      <PackagePath>ViewForm\ViewForm7.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\ViewForm\ViewForm8.xbf">
+      <PackagePath>ViewForm\ViewForm8.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\FailQuality\Documents\Visual Studio 2013\Projects\PTWinMobileApp\cs480\PTWinMobileApp\bin\Debug\PTWinMobileApp.xr.xml">
       <PackagePath>PTWinMobileApp.xr.xml</PackagePath>

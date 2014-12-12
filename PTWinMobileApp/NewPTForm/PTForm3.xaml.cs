@@ -28,6 +28,7 @@ namespace PTWinMobileApp
         public PTForm3()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
         }
@@ -67,7 +68,7 @@ namespace PTWinMobileApp
             DatePicker dateOf = (DatePicker)FindName("dp_date_of_appointment");
             TextBox infoInjury = (TextBox)FindName("tb_complaint");
             DatePicker dateOfInjury = (DatePicker)FindName("dp_date_of_injury");
-            DatePicker dateOfSurgery = (DatePicker)FindName("dp_date_of_surger");
+            DatePicker dateOfSurgery = (DatePicker)FindName("dp_date_of_surgery");
             TextBox sustainedInj = (TextBox)FindName("tb_sustain_injury");
             ptForm.appointmentDate = dateOf.Date.DateTime;
             ptForm.chiefComplaint = infoInjury.Text;

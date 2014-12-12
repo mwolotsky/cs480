@@ -28,6 +28,7 @@ namespace PTWinMobileApp
         public PTForm2()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
         }
@@ -35,7 +36,7 @@ namespace PTWinMobileApp
         public void NextStepClicked(object sender, RoutedEventArgs e)
         {
             CheckBox employed = (CheckBox)FindName("cb_employed_yes");
-            patient = (PTPatient)info.ElementAt(3);
+            patient = (PTPatient)info[PTPatient.PATIENT];
             if (employed.IsChecked == true)
             {
                 TextBox employer = (TextBox)FindName("tb_employer");

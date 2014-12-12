@@ -101,6 +101,9 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PatientFormList.xaml.cs">
+      <DependentUpon>PatientFormList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NewPTForm\PTForm3.xaml.cs">
       <DependentUpon>PTForm3.xaml</DependentUpon>
@@ -127,6 +130,30 @@
     </Compile>
     <Compile Include="ViewClients\ViewClientList.xaml.cs">
       <DependentUpon>ViewClientList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ViewForm.xaml.cs">
+      <DependentUpon>ViewForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ViewForm2.xaml.cs">
+      <DependentUpon>ViewForm2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ViewForm3.xaml.cs">
+      <DependentUpon>ViewForm3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ViewForm4.xaml.cs">
+      <DependentUpon>ViewForm4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ViewForm5.xaml.cs">
+      <DependentUpon>ViewForm5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ViewForm6.xaml.cs">
+      <DependentUpon>ViewForm6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ViewForm7.xaml.cs">
+      <DependentUpon>ViewForm7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\ViewForm8.xaml.cs">
+      <DependentUpon>ViewForm8.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -187,11 +214,47 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PatientFormList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SignUp.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewClients\ViewClientList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewForm\ViewForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewForm\ViewForm2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewForm\ViewForm3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewForm\ViewForm4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewForm\ViewForm5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewForm\ViewForm6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewForm\ViewForm7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewForm\ViewForm8.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -39,7 +39,10 @@ namespace PTWinMobileApp
 
         public void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            ListView clientList = (ListView)FindName("lv_client_list");
 
+            info[PTPatient.PATIENT] = ((PTUser)info[PTUser.USER]).listOfPatients[clientList.SelectedIndex];
+            this.Frame.Navigate(typeof(PatientFormList), info);
         }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -56,17 +59,44 @@ namespace PTWinMobileApp
                 if (thisUser.listOfPatients.Count != 0)
                 {
                     ListView clientList = (ListView)FindName("lv_client_list");
-                    clientList.FontSize = 20;
+                    
+                    ListViewItem items = (ListViewItem)FindName("lvi_item");
+                    
                     
                     foreach (PTPatient patient in thisUser.listOfPatients)
                     {
-                        clientList.Items.Add(patient.Fname + " " + patient.Lname);
+                        names.Add(patient.Fname + " " + patient.Lname);
+                        
                     }
-                    
+                    clientList.ItemsSource = names;
                     clientList.SelectionChanged += ListView_SelectionChanged;
+                   
                 }
 
             }
+        }
+
+        private void lv_client_list_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ListView clientList = (ListView)FindName("lv_client_list");
+
+            info[PTPatient.PATIENT] = ((PTUser)info[PTUser.USER]).listOfPatients[clientList.SelectedIndex];
+            this.Frame.Navigate(typeof(PatientFormList), info);
+        }
+
+        public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+        {
+
+                // Clear the status block when navigating 
+                //NotifyUser(String.Empty, NotifyType.StatusMessage);
+            this.Frame.Navigate(typeof(MainMenu), info);
+                e.Handled = true;
+                //Indicate the back button press is handled so the app does not exit 
+        }
+
+        public void BackClicked(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainMenu), info);
         }
     }
 }

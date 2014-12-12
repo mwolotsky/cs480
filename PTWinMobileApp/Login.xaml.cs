@@ -35,11 +35,35 @@ namespace PTWinMobileApp
         public Login()
         {
             this.InitializeComponent();
-            PTUser pt = new PTUser(101010, "pt_user11", "password123", new DateTime(), PTUser.PT);
-            PTUser manager = new PTUser(100100, "manager_uswer1", "pass123", new DateTime(), PTUser.MANAGER);
+            PTUser pt = new PTUser(101010, "ptuser1", "pass123", new DateTime(), PTUser.PT);
+            PTUser pt2 = new PTUser(11111, "ptuser2", "pass123", new DateTime(), PTUser.PT);
+            PTUser manager = new PTUser(100100, "manager", "pass123", new DateTime(), PTUser.MANAGER);
             PTPatient p1 = new PTPatient("John", "Smith", "Electrician", new DateTime(), 5, 7, 140, 5, "5553724321", "Edison");
+            PTPatient p2 = new PTPatient("David", "L", "Mechanic", new DateTime(), 5, 7, 140, 5, "5553724321", "RepairAndFix");
+            PTPatient p3 = new PTPatient("Rob", "Silva", "N/A", new DateTime(), 5, 7, 140, 5, "5553724321", "N/A");
+            PTPatient p4 = new PTPatient("Danny", "Chavez", "N/A", new DateTime(), 5, 7, 140, 5, "5553724321", "N/A");
+            PTPatient p5 = new PTPatient("Victoria", "Medina", "N/A", new DateTime(), 5, 7, 140, 5, "5553724321", "N/A");
+            PTPatient p6 = new PTPatient("Milhouse", "N", "N/A", new DateTime(), 5, 7, 140, 5, "5553724321", "N/A");
+            p1.ListOfForms.Add(new Form());
+            p1.ListOfForms.Add(new Form());
+            p1.ListOfForms.ElementAt(1).appointmentDate = new DateTime(2014, 5, 11);
+            p2.ListOfForms.Add(new Form());
+            p3.ListOfForms.Add(new Form());
             pt.listOfPatients.Add(p1);
+            pt.listOfPatients.Add(p4);
+            pt2.listOfPatients.Add(p2);
+            pt2.listOfPatients.Add(p3);
+            pt2.listOfPatients.Add(p5);
+            pt2.listOfPatients.Add(p6);
+            manager.listOfPatients.Add(p1);
+            manager.listOfPatients.Add(p2);
+            manager.listOfPatients.Add(p3);
+            manager.listOfPatients.Add(p4);
+            manager.listOfPatients.Add(p5);
+            manager.listOfPatients.Add(p6);
+
             users.Add(pt.UserName, pt);
+            users.Add(pt2.UserName, pt2);
             users.Add(manager.UserName, manager);
             this.NavigationCacheMode = NavigationCacheMode.Required;
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
@@ -57,7 +81,7 @@ namespace PTWinMobileApp
             {
                 if (thisUser.Password.Equals(password.Password))
                 {
-                    if (thisUser.Type == PTUser.PT)
+                    if (thisUser.Type == PTUser.PT || thisUser.Type == PTUser.MANAGER)
                     {
                         info[PTUser.USER] =  thisUser;
                         info[PTPatient.CLIENTS]= clients;

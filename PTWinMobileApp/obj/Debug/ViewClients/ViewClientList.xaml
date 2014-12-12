@@ -7,16 +7,28 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Page.Resources>
+        <CollectionViewSource x:Name="itemsViewSource" Source="{Binding Items}"/>
+        
+    </Page.Resources>
     <Grid>
         <TextBlock x:Name="tb_name" Text="Client List" FontSize="30" Margin="127,26,132,565"></TextBlock>
         <ListView x:ConnectionId='1' x:Name="lv_client_list"                                              
-                  FontSize="20" Margin="0,75,0,0">
-            <ListViewItem FontSize="20">
-                
-            </ListViewItem>
-
+                   Margin="0,75,0,0" 
+                  ItemsSource="{Binding Source={StaticResource itemsViewSource}}"
+                                                      
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock  Text="{Binding}" FontSize="30" HorizontalAlignment="Stretch" TextWrapping="NoWrap"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
+
+
+
+        <Button x:ConnectionId='2' Content="Back"                     Margin="10,564,0,19" />
+
     </Grid>
 </Page>
 

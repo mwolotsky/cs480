@@ -30,7 +30,7 @@
         <TextBlock Text="Are your symptoms:" FontSize="20" Margin="10,357,205,251" />
         <CheckBox x:Name="cb_constant" Content="Constant" Margin="232,340,0,0"/>
         <TextBlock Text="Level of Pain(10 being worst):" FontSize="20" Margin="10,417,127,196" />
-        <TextBox x:Name="cb_lvl_pain" Text="At Best" Margin="278,406,10,0" >
+        <TextBox x:Name="tb_lvl_pain" Text="At Best" Margin="278,406,10,0" >
             <TextBox.InputScope>
                 <InputScope>
                     <InputScope.Names>
@@ -40,7 +40,7 @@
             </TextBox.InputScope>
         </TextBox>
         
-        <TextBox x:Name="cb_lvl_pain_worst" Text="At Worst" Margin="278,468,10,0" >
+        <TextBox x:Name="tb_lvl_pain_worst" Text="At Worst" Margin="278,468,10,0" >
             <TextBox.InputScope>
                 <InputScope>
                     <InputScope.Names>

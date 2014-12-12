@@ -28,6 +28,7 @@ namespace PTWinMobileApp
         public PTForm4()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
         }
@@ -49,9 +50,7 @@ namespace PTWinMobileApp
             {
                 ((Form)info[Form.FORM]).treated = true;
                 ((Form)info[Form.FORM]).dateTreated = when.Date.DateTime;
-                ((Form)info[Form.FORM]).numOfVisits = Convert.ToInt32(numVisit.Text);
-
-                
+                ((Form)info[Form.FORM]).numOfVisits = Convert.ToInt32(numVisit.Text);     
             }
             if (better.IsChecked == true)
             {

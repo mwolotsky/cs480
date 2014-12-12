@@ -26,6 +26,7 @@ namespace PTWinMobileApp
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
         }
 
@@ -40,6 +41,20 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+        {
+            if (this.Frame.CanGoBack)
+            {
+                // Clear the status block when navigating 
+                //NotifyUser(String.Empty, NotifyType.StatusMessage);
+
+                this.Frame.GoBack();
+
+                //Indicate the back button press is handled so the app does not exit 
+                e.Handled = true;
+            }
         }
     }
 }
