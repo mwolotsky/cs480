@@ -28,23 +28,7 @@ namespace PTWinMobileApp
         public PTForm3()
         {
             this.InitializeComponent();
-            this.NavigationCacheMode = NavigationCacheMode.Required;
-            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
-        }
-
-        public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
-        {
-            if (this.Frame.CanGoBack)
-            {
-                // Clear the status block when navigating 
-                //NotifyUser(String.Empty, NotifyType.StatusMessage);
-
-                this.Frame.GoBack();
-
-                //Indicate the back button press is handled so the app does not exit 
-                e.Handled = true;
-            }
         }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.

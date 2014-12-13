@@ -27,7 +27,6 @@ namespace PTWinMobileApp
         public ViewClientList()
         {
             this.InitializeComponent();
-            this.NavigationCacheMode = NavigationCacheMode.Required;
             CreateView();
         }
 
@@ -84,15 +83,7 @@ namespace PTWinMobileApp
             this.Frame.Navigate(typeof(PatientFormList), info);
         }
 
-        public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
-        {
 
-                // Clear the status block when navigating 
-                //NotifyUser(String.Empty, NotifyType.StatusMessage);
-            this.Frame.Navigate(typeof(MainMenu), info);
-                e.Handled = true;
-                //Indicate the back button press is handled so the app does not exit 
-        }
 
         public void BackClicked(object sender, RoutedEventArgs e)
         {

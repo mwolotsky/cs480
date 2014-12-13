@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="PTWinMobileApp.Search"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PTWinMobileApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Search"  Margin="134,343,0,0" VerticalAlignment="Top" Click="SearchClicked"/>
+        <TextBox x:Name="tb_name" Margin="43,148,60,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="297"/>
+        <TextBox x:Name="tb_tb_id" Margin="43,271,60,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="297"/>
+        <TextBlock Margin="43,119,0,0" TextWrapping="Wrap" Text="Patient Name" FontSize="20" VerticalAlignment="Top"/>
+        <TextBlock Margin="43,242,0,0" TextWrapping="Wrap" Text="Patient ID" FontSize="20" VerticalAlignment="Top"/>
+        <TextBlock Text="OR" FontSize="20" Margin="169,210,196,403"></TextBlock>
+        <Button Content="Back"  Margin="20,566,0,0" VerticalAlignment="Top" Click="BackClicked"/>
+
+    </Grid>
+</Page>

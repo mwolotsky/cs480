@@ -44,7 +44,7 @@ namespace PTWinMobileApp
 
         public void SearchFormClicked(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Search), info);
         }
 
         public void LogOutClicked(object sender, RoutedEventArgs e)

@@ -28,7 +28,7 @@ namespace PTWinMobileApp
 
 
         //List<object> info = new List<object>(4);
-        object[] info = new object[4];
+        object[] info = new object[5];
         Dictionary<string, PTUser> users = new Dictionary<string, PTUser>();
         Dictionary<string, PTPatient> clients = new Dictionary<string, PTPatient>();
 
@@ -65,8 +65,6 @@ namespace PTWinMobileApp
             users.Add(pt.UserName, pt);
             users.Add(pt2.UserName, pt2);
             users.Add(manager.UserName, manager);
-            this.NavigationCacheMode = NavigationCacheMode.Required;
-            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
         }
 
@@ -96,19 +94,6 @@ namespace PTWinMobileApp
             this.Frame.Navigate(typeof(SignUp), users);
         }
 
-        public void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
-        {
-            if (this.Frame.CanGoBack)
-            {
-                // Clear the status block when navigating 
-                //NotifyUser(String.Empty, NotifyType.StatusMessage);
-
-                this.Frame.GoBack();
-
-                //Indicate the back button press is handled so the app does not exit 
-                e.Handled = true;
-            }
-        }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>

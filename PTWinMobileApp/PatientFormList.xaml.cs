@@ -20,32 +20,15 @@ namespace PTWinMobileApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PTForm7 : Page
+    public sealed partial class PatientFormList : Page
     {
         object[] info;
-        public PTForm7()
+        public PatientFormList()
         {
             this.InitializeComponent();
+            //Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
-        public void NextStepClicked(object sender, RoutedEventArgs e)
-        {
-            List<CheckBox> cbList = new List<CheckBox>();
-            cbList.Add((CheckBox)FindName("cb_x_ray"));
-            cbList.Add((CheckBox)FindName("cb_mri"));
-            cbList.Add((CheckBox)FindName("cb_other"));
-            cbList.Add((CheckBox)FindName("cb_injection"));
-            cbList.Add((CheckBox)FindName("cb_cat_scan"));
-
-            foreach(CheckBox cb in cbList)
-            {
-                if (cb.IsChecked == true)
-                {
-                    ((Form)info[Form.FORM]).medicalIntervention.Add(cb.Content.ToString());
-                }
-            }
-            this.Frame.Navigate(typeof(PTForm8), info);
-        }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>
@@ -54,7 +37,34 @@ namespace PTWinMobileApp
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             info = e.Parameter as object[];
+
+            PTPatient patient = (PTPatient)info[PTPatient.PATIENT];
+            List<string> list = new List<String>();
+            if (patient.ListOfForms.Count != 0)
+            {
+                ListView clientList = (ListView)FindName("lv_client_list");
+
+                ListViewItem items = (ListViewItem)FindName("lvi_item");
+
+
+                foreach (Form f in patient.ListOfForms)
+                {
+                    list.Add(f.appointmentDate.ToString());
+
+                }
+                clientList.ItemsSource = list;
+                clientList.SelectionChanged += ListView_SelectionChanged;
+            }
         }
 
+        public void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        public void BackClicked(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainMenu), info);
+        }
     }
 }

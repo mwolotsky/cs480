@@ -116,6 +116,8 @@
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="PTWinMobileApp.PatientFormList" />
+    <RootType FullName="PTWinMobileApp.Search" />
+    <RootType FullName="PTWinMobileApp.SearchResult" />
     <RootType FullName="PTWinMobileApp.SignUp" />
     <RootType FullName="PTWinMobileApp.ViewClientList" />
     <RootType FullName="PTWinMobileApp.ViewForm" />

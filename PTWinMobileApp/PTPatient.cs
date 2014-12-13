@@ -7,7 +7,7 @@ using Windows.Data.Json;
 
 namespace PTWinMobileApp
 {
-    class PTPatient
+    public class PTPatient
     {
         public const int CLIENTS = 1;
         public const int PATIENT = 2;
@@ -44,7 +44,7 @@ namespace PTWinMobileApp
             fname = "";
             lname = "";
             occupation = "";
-            patientnumber = 0;
+            patientnumber = patientNumber;
             birthdate = new DateTime();
             heightFeet = 0;
             heightInches = 0;
@@ -53,6 +53,7 @@ namespace PTWinMobileApp
             phone = "0";
             employer = "";
             listOfForms = new List<Form>();
+            patientNumber++;
 
         }
 
@@ -63,7 +64,7 @@ namespace PTWinMobileApp
             this.fname= fname;
             this.lname = lname;
             this.occupation = occupation;
-            this.patientnumber = patientNumber++;
+            this.patientnumber = patientNumber;
             this.birthdate = birthdate;
             this.heightFeet = heightFeet;
             this.heightInches = heightInches;
@@ -72,6 +73,7 @@ namespace PTWinMobileApp
             this.phone = phone;
             this.employer = employer;
             this.listOfForms = new List<Form>();
+            patientNumber++;
         }
 
         public PTPatient(JsonObject jsonObject)

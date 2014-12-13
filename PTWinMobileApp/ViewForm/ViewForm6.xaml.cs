@@ -20,32 +20,13 @@ namespace PTWinMobileApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PTForm7 : Page
+    public sealed partial class ViewForm6 : Page
     {
-        object[] info;
-        public PTForm7()
+        public ViewForm6()
         {
             this.InitializeComponent();
         }
 
-        public void NextStepClicked(object sender, RoutedEventArgs e)
-        {
-            List<CheckBox> cbList = new List<CheckBox>();
-            cbList.Add((CheckBox)FindName("cb_x_ray"));
-            cbList.Add((CheckBox)FindName("cb_mri"));
-            cbList.Add((CheckBox)FindName("cb_other"));
-            cbList.Add((CheckBox)FindName("cb_injection"));
-            cbList.Add((CheckBox)FindName("cb_cat_scan"));
-
-            foreach(CheckBox cb in cbList)
-            {
-                if (cb.IsChecked == true)
-                {
-                    ((Form)info[Form.FORM]).medicalIntervention.Add(cb.Content.ToString());
-                }
-            }
-            this.Frame.Navigate(typeof(PTForm8), info);
-        }
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>
@@ -53,8 +34,6 @@ namespace PTWinMobileApp
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            info = e.Parameter as object[];
         }
-
     }
 }

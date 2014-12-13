@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PTWinMobileApp
 {
-    class Form
+    public class Form
     {
         public const int FORM = 3;
         public int ptNumber;
