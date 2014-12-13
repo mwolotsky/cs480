@@ -1,0 +1,29 @@
+Charter Document
+
+Purpose:
+	The team will construct a windows mobile application for physical therapists which will allow them to easily manage important health documents of their patients. The application will also allow managers to easily monitor health documents for all patients.
+
+Duration and Time Commitment:
+	The team has committed one quarter of the Cal Poly Pomona school year in order to complete the desired application. Each member will average about 3-5 hours of work per week on the application.
+
+Scope:
+	Activities which are necessary for physical therapists reporting and monitoring patient health information, as well as activities necessary for managers monitoring patient health information are all in the scope of this project.
+
+Members:
+	Max Wolotsky - Project Manager
+	Robert Eschevera - Developer
+	Tim Fleming - Developer
+	Jose Lascano - Quality Assurance / Business Analyst
+
+Desired End Result:
+	The team will identify the necessary daily activities of a physical therapist and the manager of a physical therapist, and create an application which will be both convenient and efficient to assist with their daily activities.  
+
+Supporting Resources:
+	The team will need access to Windows 8 machines in order to complete development on the Windows Mobile platform. A source control service such as Github is also necessary to manage the necessary code, and KanbanFlow is necessary to delegate tasks to the team members.
+
+Reporting Plan:
+	The project manager will provide up to date progress using the provided KanbanFlow and Github. KanbanFlow will detail up-to-date tasks while Github will hold the currently available application to be demonstrated.
+
+
+Deliverables:
+	The team will deliver a series of documents outlining development strategy, testing strategy, deployment instructions, and release notes.	The source code of the application will also be available as well as a video demonstration if deemed necessary.
